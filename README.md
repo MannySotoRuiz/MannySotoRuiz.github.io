@@ -3,6 +3,6 @@ A Personal Portfolio website to showcase all my details and projects at one plac
 
 Languages Used:
 
-HTML
-CSS
-Javascript
+- HTML
+- CSS
+- Javascript
