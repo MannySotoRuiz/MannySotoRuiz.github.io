@@ -330,15 +330,40 @@ h6 { font-size: 16px;}
 .thumbnail{
 	display: block;
 	width: 100%;
-	height:180px;
 	object-fit: cover;
 }
 
 #project1 {
 	display: block;
-	width: 50%;
-	height: 50%;
-	object-fit: cover;
+	height: 100%;
+	width: 40%;
+}
+
+#project11 {
+	display: block;
+	height: 100%;
+	width: 30%;
+}
+
+#project2 {
+	display: block;
+	height: 80%;
+	width: 25%;
+	margin-right: 20px;
+}
+
+.holdImages {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 250px;
+}
+
+#holdWSImages {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 400px;
 }
 
 .post-preview{
@@ -380,6 +405,23 @@ h6 { font-size: 16px;}
 
 textarea {
 	resize: none;
+}
+
+.editSpace {
+	margin: 0px;
+	color: black;
+}
+
+.colorTextBlack {
+	color: black;
+}
+
+.colorTextGray {
+	color: rgb(80,80,80);
+}
+
+li {
+	margin-bottom: 10px;
 }
 
 
@@ -425,6 +467,29 @@ textarea {
 		justify-content: center;
 	}
 
+	.holdImages {
+		height: 300px;
+	}
+
+	#project1 {
+		width: 75%;
+	}
+
+	#holdWSImages{
+		display: table;
+	}
+
+	#project2 {
+		width: 60%;
+		margin-bottom: 10px;
+
+	}
+
+	#videoWS {
+		width: 100%;
+	}
+
+	
 }
 
 @media screen and (max-width: 400px){
@@ -440,6 +505,33 @@ textarea {
 
 	}
 
+	#project1 {
+		width: 100%;
+	}
+
+	#holdWSImages {
+		display: table;
+		height: 600px;
+		width: 100%;
+	}
+
+	#project2 {
+		margin-left: 40px;
+		height: 300px;
+		width: 80%;
+
+	}
+
+	#videoWS {
+		height: 50%;
+		width: 100%;		
+	}
+
+}
+
+.clips {
+	width: 47%;
+	height: 100%;
 }
 
 

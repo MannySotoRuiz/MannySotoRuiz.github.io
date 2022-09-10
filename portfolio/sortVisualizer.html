@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/sortVisualizer.css">
+  <!-- <link rel="stylesheet" href="./bootstrap/bootstrap.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    .nav-wrapper{
+      border-radius:5px 5px 0 0;
+      grid-area:nav-wrapper;
+      border-bottom: 1px solid var(--borderColor);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--mainColor);
+    }
+    .dots-wrapper{
+      display: flex;
+      padding: 10px;
+    }
+    #dot-1{
+      background-color:  #FC6058;
+    }
+
+    #dot-2{
+      background-color:  #FEC02F;
+    }
+
+    #dot-3{
+      background-color:  #2ACA3E;
+    }
+    #navigation a{
+      color:var(--mainText);
+    }
+
+
+    #navigation{
+      margin:0;
+      padding: 10px;
+    }
+
+    #navigation li{
+      display: inline-block;
+      margin-right: 5px;
+      margin-left:5px;
+    }
+    .browser-dot{
+      background-color: black;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      margin: 5px;
+
+      -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+      box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="nav-wrapper">
+
+      <a href="index.html">
+        <div class="dots-wrapper">
+          <div id="dot-1" class="browser-dot"></div>
+          <div id="dot-2" class="browser-dot"></div>
+          <div id="dot-3" class="browser-dot"></div>
+        </div>
+      </a>
+  
+      <ul id="navigation">
+        <li><a href="index.html#contact">Contact</a></li>
+  
+      </ul>
+    </div>
+  </header>
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand mr-5" href="">Sorting Visualizer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav algos text-center">
+          <li class="nav-item mr-2">
+            <button class="nav-link">Bubble</button>
+          </li>
+          <li class="nav-item mr-2">
+            <button class="nav-link">Selection</button>
+          </li>
+          <li class="nav-item mr-2">
+            <button class="nav-link">Insertion</button>
+          </li>
+          <li class="nav-item mr-2">
+            <button class="nav-link">Merge</button>
+          </li>
+          <li class="nav-item mr-2">
+            <button class="nav-link">Heap</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <section>
+    <div class="array-inputs">
+      <div class="d-inline mr-2">
+        <label for="customRange2">Size of Array</label>
+        <input type="range" class="custom-range" min=20 max=80 id="arr-size" step="10" value="20">
+      </div>
+
+      <div class="d-inline mr-2">
+        <label for="customRange2">Speed</label>
+        <input type="range" class="custom-range" min=1 max=5 id="speed" step="1" value="4">
+      </div>
+
+      <button id="arr-generate" class="btn btn-md btn-primary mr-2">Generate New Array</button>
+      <button id="stop" class="btn btn-md btn-danger btn-locked" disabled>Stop</button>
+    </div>
+
+
+    <div class="row mt-3 text-center m-0">
+      <div class="col-md-1"></div>
+      <div id="array-container" class="col-md-10">
+        <!-- Bars apper here -->
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </section>
+
+  <footer>
+    
+  </footer>
+
+
+
+  <!-- scripts -->
+  <!-- <script src="./bootstrap/bootstrap.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="./bootstrap/bootstrap.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/visualizations.js"></script>
+
+  <script src="./js/algo/bubbleSort.js"></script>
+  <script src="./js/algo/heapSort.js"></script>
+  <script src="./js/algo/insertionSort.js"></script>
+  <script src="./js/algo/mergeSort.js"></script>
+  <script src="./js/algo/quickSort.js"></script>
+  <script src="./js/algo/selectionSort.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
