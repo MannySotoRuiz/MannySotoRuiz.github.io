@@ -447,7 +447,7 @@ li {
 }
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1600px){
 	.main-container{
 		width: 95%;
 	}
@@ -530,8 +530,7 @@ li {
 }
 
 .clips {
-	width: 47%;
-	height: 100%;
+	width: 40%;
 }
 
 
