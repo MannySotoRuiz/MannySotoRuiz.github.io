@@ -19,26 +19,74 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="default.css"
-    />
-    <link
-      id="theme-style"
-      rel="stylesheet"
-      type="text/css"
-      href=""
-    />
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
 
     <style>
       .error {
         color: red;
       }
+      .bannerAnnouncement {
+        background-color: rgb(99 102 241);
+        color: white;
+        padding-left: 8px;
+        padding-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+      }
+      .bannerAnnouncement span {
+        color: white;
+      }
+      .bannerAnnouncement a {
+        color: aqua;
+      }
+
+      .bannerAnnouncement:nth-child(2) {
+        background-color: rgb(129 140 248);
+        top: 50px;
+      }
+
+      .mannytechLabsPost {
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        font-size: large;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mannytechLabsPost span {
+        font-size: larger;
+        font-weight: 900;
+        color: black;
+      }
     </style>
   </head>
   <body>
-    <section class="s1">
+    <div class="bannerAnnouncement">
+      <span
+        >Need a website? mobile app? I'm currently taking on new clients!
+        <a href="https://mannytechlabs.com/" target="_blank"
+          >Visit MannyTech Labs</a
+        ></span
+      >
+    </div>
+    <div class="bannerAnnouncement">
+      <span
+        >🎉 Just launched the beta version of ContentFlowAI! 🎉
+        <a href="https://contentflowai.vercel.app/" target="_blank"
+          >Click here for more</a
+        ></span
+      >
+    </div>
+    <section class="s1" style="margin-top: 100px">
       <div class="main-container">
         <div class="greeting-wrapper">
           <h1>Hi, I'm Emmanuel Soto Ruiz</h1>
@@ -48,18 +96,9 @@
           <div class="nav-wrapper">
             <a href="index.html">
               <div class="dots-wrapper">
-                <div
-                  id="dot-1"
-                  class="browser-dot"
-                ></div>
-                <div
-                  id="dot-2"
-                  class="browser-dot"
-                ></div>
-                <div
-                  id="dot-3"
-                  class="browser-dot"
-                ></div>
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
               </div>
             </a>
 
@@ -69,35 +108,16 @@
           </div>
 
           <div class="left-column">
-            <img
-              id="profile_pic"
-              src="Manny.jpg"
-            />
+            <img id="profile_pic" src="Manny.jpg" />
             <h5 style="text-align: center; line-height: 0">
               Personalize Theme
             </h5>
 
             <div id="theme-options-wrapper">
-              <div
-                data-mode="light"
-                id="light-mode"
-                class="theme-dot"
-              ></div>
-              <div
-                data-mode="blue"
-                id="blue-mode"
-                class="theme-dot"
-              ></div>
-              <div
-                data-mode="green"
-                id="green-mode"
-                class="theme-dot"
-              ></div>
-              <div
-                data-mode="purple"
-                id="purple-mode"
-                class="theme-dot"
-              ></div>
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
 
             <p id="settings-note">
@@ -108,27 +128,15 @@
           <div class="right-column">
             <div id="preview-shadow">
               <div id="preview">
-                <div
-                  id="corner-tl"
-                  class="corner"
-                ></div>
-                <div
-                  id="corner-tr"
-                  class="corner"
-                ></div>
+                <div id="corner-tl" class="corner"></div>
+                <div id="corner-tr" class="corner"></div>
                 <h3>What I Do</h3>
                 <p>
-                  I'm a senior @ NYU studying Computer Science with an interest
-                  in software development
+                  I&apos;m a new grad software engineer and actively seeking
+                  Full-Time SWE roles.
                 </p>
-                <div
-                  id="corner-br"
-                  class="corner"
-                ></div>
-                <div
-                  id="corner-bl"
-                  class="corner"
-                ></div>
+                <div id="corner-br" class="corner"></div>
+                <div id="corner-bl" class="corner"></div>
               </div>
             </div>
           </div>
@@ -143,13 +151,13 @@
             <h4>More about me</h4>
 
             <p>
-              In my free time, I enjoy builing new projects and learning new
-              skills
+              I studied Computer Science + minored in Web Programming &
+              Applications at NYU.
             </p>
 
             <p>
-              I am an eager entry-level programmer who is working hard to bring
-              my skills to a team and work on real-world projects.
+              Have a big passion for Full-Stack development and I am constantly
+              working on projects to keep on learning and improving my skills.
             </p>
 
             <hr />
@@ -157,9 +165,7 @@
             <h4>SKILLS</h4>
 
             <p>
-              <a
-                target="_blank"
-                href="EmmanuelSotoRuiz_Resume.pdf"
+              <a target="_blank" href="EmmanuelSotoRuiz_Resume.pdf"
                 >Download Resume</a
               >
             </p>
@@ -176,10 +182,11 @@
               </ul>
 
               <ul>
+                <li>Next.js</li>
                 <li>PHP</li>
                 <li>CSS</li>
                 <li>MongoDB</li>
-                <li>SQL</li>
+                <li>MySQL</li>
                 <li>Git</li>
                 <li>HTML</li>
               </ul>
@@ -187,10 +194,7 @@
           </div>
 
           <div class="social-links">
-            <img
-              id="social_img"
-              src="media.png"
-            />
+            <img id="social_img" src="media.png" />
             <h3>Find me on LinkedIn & Twitter</h3>
 
             <a
@@ -199,9 +203,7 @@
               >LinkedIn: @Manny Soto Ruiz</a
             >
             <br />
-            <a
-              target="_blank"
-              href="https://github.com/MannySotoRuiz"
+            <a target="_blank" href="https://github.com/MannySotoRuiz"
               >GitHub: @MannySotoRuiz</a
             >
           </div>
@@ -218,9 +220,61 @@
           <div>
             <div class="post">
               <img
-                class="thumbnail nannu"
-                src="images/nannu_logo.png"
+                class="thumbnail contentflowai"
+                src="https://res.cloudinary.com/dzyd5ztj7/image/upload/v1698895881/contentflowai_kr38vx.png"
               />
+              <div class="post-preview">
+                <h6 class="post-title">ContentFlowAI</h6>
+                <p class="post-intro">
+                  Created a Headless CMS to allow users to create and manage
+                  content on their websites easily without having to write any
+                  code. Features include: No-Code Web Builder w/ Live Visual
+                  Editing, AI Content Generation, and more.
+                </p>
+                <div class="workSkills">
+                  <b>Skills: </b>TypeScript, NextJS, React, MongoDB, Tailwind
+                  CSS, Prisma
+                </div>
+                <a
+                  style="margin-top: 5px"
+                  href="https://contentflowai.vercel.app/"
+                  target="_blank"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img
+                class="thumbnail nannu"
+                src="https://res.cloudinary.com/dzyd5ztj7/image/upload/v1694558286/LandingPage_sejnmp.png"
+              />
+              <div class="post-preview">
+                <h6 class="post-title">MannyTech Labs</h6>
+                <p class="post-intro">
+                  Led and maintained an end-to-end Scrum environment at a
+                  startup to effectively create a website for launch date using
+                  NextJS + React
+                </p>
+                <div class="workSkills">
+                  <b>Skills: </b>NextJS, React, Agile development
+                </div>
+                <a
+                  style="margin-top: 5px"
+                  href="https://mannytechlabs.com/"
+                  target="_blank"
+                  >Want to hire me? Visit my agency</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail nannu" src="images/nannu_logo.png" />
+              <div class="display"></div>
               <div class="post-preview">
                 <h6 class="post-title">Nannu</h6>
                 <p class="post-intro">
@@ -235,7 +289,7 @@
             </div>
           </div>
 
-          <div>
+          <!-- <div>
             <div class="post">
               <img
                 class="thumbnail"
@@ -253,7 +307,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -284,10 +338,7 @@
 
           <div>
             <div class="post">
-              <img
-                class="thumbnail"
-                src="WeatherApp.png"
-              />
+              <img class="thumbnail" src="WeatherApp.png" />
               <div class="post-preview">
                 <h6 class="post-title">Weather App</h6>
                 <p class="post-intro">
@@ -311,10 +362,7 @@
 
           <div>
             <div class="post">
-              <img
-                class="thumbnail"
-                src="SortVisualizer.png"
-              />
+              <img class="thumbnail" src="SortVisualizer.png" />
               <div class="post-preview">
                 <h6 class="post-title">Sorting Visualizer</h6>
                 <p class="post-intro">
@@ -328,10 +376,7 @@
 
           <div>
             <div class="post">
-              <img
-                class="thumbnail"
-                src="path_pic2.PNG"
-              />
+              <img class="thumbnail" src="path_pic2.PNG" />
               <div class="post-preview">
                 <h6 class="post-title">Pathfinding Visualizer</h6>
                 <p class="post-intro">
@@ -345,10 +390,7 @@
 
           <div>
             <div class="post">
-              <img
-                class="thumbnail"
-                src="WorkSmarter.png"
-              />
+              <img class="thumbnail" src="WorkSmarter.png" />
               <div class="post-preview">
                 <h6 class="post-title">WorkSmarter</h6>
                 <p class="post-intro">
@@ -363,10 +405,7 @@
 
           <div>
             <div class="post">
-              <img
-                class="thumbnail"
-                src="RegistrationImg.png"
-              />
+              <img class="thumbnail" src="RegistrationImg.png" />
               <div class="post-preview">
                 <h6 class="post-title">
                   University Course Registration System
@@ -383,10 +422,7 @@
 
           <div>
             <div class="post">
-              <img
-                class="thumbnail"
-                src="portfolioPic.png"
-              />
+              <img class="thumbnail" src="portfolioPic.png" />
               <div class="post-preview">
                 <h6 class="post-title">Personal Portfolio Website</h6>
                 <p class="post-intro">
@@ -430,12 +466,7 @@
           />
           <br />
           <label for="email">Email</label>
-          <input
-            class="input-field"
-            type="email"
-            name="email"
-            id="email"
-          />
+          <input class="input-field" type="email" name="email" id="email" />
           <br />
           <label for="yourmessage">Message</label>
           <textarea
@@ -444,19 +475,12 @@
             id="yourmessage"
           ></textarea>
 
-          <input
-            id="submit-btn"
-            type="submit"
-            value="Send"
-          />
+          <input id="submit-btn" type="submit" value="Send" />
         </form>
       </div>
     </section>
 
-    <script
-      type="text/javascript"
-      src="script.js"
-    ></script>
+    <script type="text/javascript" src="script.js"></script>
 
     <!-- Add jQuery -->
     <script
